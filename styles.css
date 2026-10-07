@@ -36,6 +36,9 @@ button:focus-visible, input:focus-visible { outline: 3px solid #b7cf76; outline-
 .brand-mark { display: grid; width: 29px; height: 29px; place-items: center; color: var(--paper); background: var(--green); border-radius: 50%; font-family: var(--serif); font-size: 19px; font-style: italic; font-weight: 500; }
 .brand-period { color: var(--coral); }
 .topbar-right { display: flex; align-items: center; gap: 25px; }
+.numbers-link { color: var(--green); font-family: var(--mono); font-size: 10px; text-decoration-color: #b0c1aa; text-underline-offset: 3px; }
+.numbers-link:hover { color: var(--green-dark); }
+.numbers-link span { color: var(--coral); }
 .deck-count { display: flex; align-items: center; gap: 8px; color: var(--muted); font-family: var(--mono); font-size: 11px; }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #8aa45d; }
 .manage-button, .shuffle-button, .mode-button, .reveal-button, .next-button, .close-button { cursor: pointer; }
@@ -125,6 +128,7 @@ h2 { font-size: 36px; }
   .page-shell { width: calc(100% - 28px); }
   .topbar { height: 60px; }
   .topbar-right { gap: 10px; }
+  .numbers-link { font-size: 9px; }
   .deck-count { font-size: 9px; }
   .manage-button { height: 36px; padding: 0 10px; font-size: 12px; }
   main { padding: 28px 0 34px; }
@@ -160,6 +164,7 @@ h2 { font-size: 36px; }
   .page-shell { width: calc(100% - 22px); }
   .brand { gap: 7px; font-size: 18px; }
   .topbar-right { gap: 7px; }
+  .numbers-link { font-size: 8px; }
   .deck-count { gap: 5px; font-size: 8px; }
   .manage-button { padding: 0 8px; }
   .mode-button { padding: 8px; font-size: 9px; }
