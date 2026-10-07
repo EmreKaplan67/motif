@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f3ed">
+    <title>Motif — French practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="" aria-label="Motif home">
+          <span class="brand-mark" aria-hidden="true">m.</span>
+          <span>motif<span class="brand-period">.</span></span>
+        </a>
+        <div class="topbar-right">
+          <span class="deck-count"><span class="status-dot"></span><span id="deck-count">0 words</span></span>
+        </div>
+      </header>
+
+      <main>
+        <section class="practice" aria-labelledby="page-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE FRENCH, OFTEN</p>
+              <h1 id="page-title">Find the <em>words.</em></h1>
+            </div>
+            <p class="heading-note">A few words closer<br>to thinking in French.</p>
+          </div>
+
+          <div class="study-toolbar">
+            <div class="mode-switch" role="group" aria-label="Translation direction">
+              <button class="mode-button is-active" data-mode="fr-en" type="button" aria-pressed="true">FR <span>→</span> EN</button>
+              <button class="mode-button" data-mode="en-fr" type="button" aria-pressed="false">EN <span>→</span> FR</button>
+              <button class="mode-button" data-mode="mixed" type="button" aria-pressed="false">Mixed <span>↗</span></button>
+            </div>
+            <button class="shuffle-button" id="shuffle-button" type="button" aria-label="Get a random word" title="Get a random word">
+              <span aria-hidden="true">⤨</span>
+            </button>
+          </div>
+
+          <article class="quiz-panel" aria-live="polite">
+            <div class="panel-topline">
+              <span id="prompt-direction">FRENCH TO ENGLISH</span>
+              <span class="question-number" id="question-number">01</span>
+            </div>
+            <div class="prompt-area">
+              <span class="prompt-label" id="prompt-label">TRANSLATE THIS</span>
+              <p class="prompt-word" id="prompt-word">bonjour</p>
+              <p class="prompt-hint" id="prompt-hint">Type the English translation</p>
+            </div>
+            <form id="answer-form" class="answer-form" autocomplete="off">
+              <label class="visually-hidden" for="answer-input">Your translation</label>
+              <input id="answer-input" name="answer" type="text" placeholder="Your translation…" required spellcheck="false" aria-describedby="answer-feedback">
+              <button class="submit-button" id="submit-button" type="submit" aria-label="Check answer">
+                <span>Check</span><span aria-hidden="true">↗</span>
+              </button>
+            </form>
+            <div class="answer-footer">
+              <p class="feedback" id="answer-feedback" role="status" aria-live="polite"></p>
+              <button class="reveal-button" id="reveal-button" type="button">Show answer</button>
+            </div>
+            <div class="next-row">
+              <span class="next-note" id="next-note">One word at a time.</span>
+              <button class="next-button" id="next-button" type="button" hidden>Next word <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+          <div class="session-footer" aria-label="Session score">
+            <div class="session-stat"><span class="stat-value" id="correct-count">0</span><span class="stat-label">CORRECT</span></div>
+            <span class="stat-divider" aria-hidden="true"></span>
+            <div class="session-stat"><span class="stat-value" id="wrong-count">0</span><span class="stat-label">WRONG</span></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <span>FAIT AVEC CURIOSITÉ</span>
+        <span>FRANÇAIS, UN MOT À LA FOIS</span>
+      </footer>
+    </div>
+
+  </body>
+</html>
